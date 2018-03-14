@@ -18,9 +18,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Construct the data source
         final ArrayList<StudentModel> arrayOfStudents = new ArrayList<StudentModel>();
-// Create the adapter to convert the array to views
+        // Create the adapter to convert the array to views
         StudentAdapter  adapter = new StudentAdapter(this, arrayOfStudents);
-// Attach the adapter to a ListView
+        // Attach the adapter to a ListView
         final ListView listView = (ListView) findViewById(R.id.studentList);
         listView.setAdapter(adapter);
         try {
